@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: kaspersky
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+kaspersky:
+  BASE_URL: https://opentip.kaspersky.com/api/v1/
+  API_KEY: jBRRo//wQ1ewWHTda5322Q==

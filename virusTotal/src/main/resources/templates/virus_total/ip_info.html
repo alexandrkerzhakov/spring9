@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>IP Info</title>
+    <meta name="description" content="IP-address information">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        span {
+            margin-left: 10px;
+            color: #666;
+        }
+
+        .table_results {
+            min-width: 300px;
+            overflow: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+<form th:object="${ipInfoInstance}">
+    <div>
+        <h2>IP Info:</h2>
+
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Self Link</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${ipInfoInstance.data.id}"></td>
+                    <td th:text="${ipInfoInstance.data.type}"></td>
+                    <td th:text="${ipInfoInstance.data.links.self}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h3>Attributes:</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Last HTTPS Certificate Date</th>
+                    <th>JARM</th>
+                    <th>Whois</th>
+                    <th>Whois Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${ipInfoInstance.data.attributes.last_https_certificate_date}"></td>
+                    <td th:text="${ipInfoInstance.data.attributes.jarm}"></td>
+                    <td th:text="${ipInfoInstance.data.attributes.whois}"></td>
+                    <td th:text="${ipInfoInstance.data.attributes.whois_date}"></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <h3>Last Analysis Stats:</h3>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Malicious</th>
+                        <th>Suspicious</th>
+                        <th>Undetected</th>
+                        <th>Harmless</th>
+                        <th>Timeout</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td th:text="${ipInfoInstance.data.attributes.last_analysis_stats.malicious}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.last_analysis_stats.suspicious}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.last_analysis_stats.undetected}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.last_analysis_stats.harmless}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.last_analysis_stats.timeout}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table_results">
+                <h4>Last Analysis Results:</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Engine Name</th>
+                        <th>Method</th>
+                        <th>Category</th>
+                        <th>Result</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="result : ${ipInfoInstance.data.attributes.last_analysis_results}">
+                        <td th:text="${result.key}"></td>
+                        <td th:text="${result.value.method}"></td>
+                        <td th:text="${result.value.category}"></td>
+                        <td th:text="${result.value.result}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h4>Total Votes:</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Harmless</th>
+                        <th>Malicious</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td th:text="${ipInfoInstance.data.attributes.total_votes.harmless}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.total_votes.malicious}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h4>Additional Attributes:</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Continent</th>
+                        <th>As Owner</th>
+                        <th>Country</th>
+                        <th>Continent</th>
+                        <th>Last Analysis Date</th>
+                        <th>Last Modification Date</th>
+                        <th>Reputation</th>
+                        <th>Asn</th>
+                        <th>Network</th>
+                        <th>Regional Internet Registry</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td th:text="${ipInfoInstance.data.attributes.continent}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.as_owner}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.country}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.continent}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.last_analysis_date}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.Last_modification_date}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.reputation}"></td>
+                        <td th:text="${#strings.arrayJoin(ipInfoInstance.data.attributes.tags, ' ')}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.asn}"></td>
+                        <td th:text="${ipInfoInstance.data.attributes.regional_internet_registry}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
+

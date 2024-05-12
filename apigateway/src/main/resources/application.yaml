@@ -1,0 +1,17 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: virusTotal
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/virusTotal/**
+        - id: kaspersky
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/kaspersky/**
