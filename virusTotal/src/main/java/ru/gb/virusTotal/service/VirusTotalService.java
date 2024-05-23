@@ -11,8 +11,10 @@ import org.springframework.web.multipart.MultipartFile;
 import ru.gb.virusTotal.properties.VirusTotalProperties;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 @Service
 public class VirusTotalService {
@@ -22,24 +24,27 @@ public class VirusTotalService {
     @Autowired
     private VirusTotalProperties virusTotalProperties;
 
-    public Request createGetRequest(String baseUrl, String endpoint, String requestedParameter, String additionalPartForUrl) {
-        String URL = baseUrl + endpoint + requestedParameter + additionalPartForUrl;
-        logger.info("createGetRequest on {}", URL);
+    public Request createGetRequest(String endpoint, String requestedParameter, String additionalPartForUrl) {
+        String Url = createUrl(virusTotalProperties.getBASE_URL(), endpoint, requestedParameter, additionalPartForUrl);
+        logger.info("createGetRequest on {}", Url);
+        return getRequest(Url);
+    }
+
+    public String createUrl(String... parts) {
+        return String.join("", parts);
+    }
+
+    public Request getRequest(String Url) {
         Request.Builder requestBuilder = new Request.Builder()
-                .url(URL)
+                .url(Url)
                 .get()
                 .header("x-apikey", virusTotalProperties.getAPI_KEY())
                 .addHeader("accept", "application/json");
         return requestBuilder.build();
     }
 
-    public Optional<String> getResponseString(Request request) {
-
-        OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder()
-                .connectTimeout(60, TimeUnit.SECONDS)
-                .readTimeout(60, TimeUnit.SECONDS)
-                .writeTimeout(60, TimeUnit.SECONDS);
-        OkHttpClient okHttpClient = okHttpClientBuilder.build();
+    public Optional<String> createResponseString(Request request) {
+        OkHttpClient okHttpClient = createOkHttpClient();
 
         try (Response response = okHttpClient.newCall(request).execute()) {
             return Optional.ofNullable(response.body())
@@ -59,34 +64,55 @@ public class VirusTotalService {
         }
     }
 
+    public OkHttpClient createOkHttpClient() {
+        OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder()
+                .connectTimeout(30, TimeUnit.SECONDS)
+                .readTimeout(30, TimeUnit.SECONDS)
+                .writeTimeout(30, TimeUnit.SECONDS);
+        return okHttpClientBuilder.build();
+    }
+
     public <T> T getInstance(String json, Class<T> tClass) {
         T instance = null;
         try {
             instance = objectMapper.readValue(json, tClass);
             logger.info("getInstance {}", instance);
         } catch (JsonProcessingException e) {
-            logger.error("Error processing getInstance JSON: {}", e.getMessage(), e);
+            logger.error("Error processing in getInstance: {}", e.getMessage(), e);
         }
         return instance;
     }
 
-    public Request createPostRequest(String baseUrl, String endpoint, MultipartFile file) throws IOException {
-        String URL = baseUrl + endpoint;
-        logger.info("createPostRequest on {}", URL);
-
-        MultipartBody.Builder multipartBuilder = new MultipartBody.Builder()
-                .setType(MultipartBody.FORM)
-                .addFormDataPart("file", file.getOriginalFilename(),
-                        okhttp3.RequestBody.create(file.getBytes(), MediaType.parse("application/octet-stream")));
-
-        Request.Builder requestBuilder = new Request.Builder()
-                .url(URL)
-                .post(multipartBuilder.build())
-                .header("x-apikey", virusTotalProperties.getAPI_KEY())
-                .addHeader("content-type", "multipart/form-data")
-                .addHeader("accept", "application/json");
-
-        return requestBuilder.build();
-
+    public Request createPostRequest(String endpoint, MultipartFile file) throws IOException {
+        String Url = createUrl(virusTotalProperties.getBASE_URL(), endpoint);
+        logger.info("createPostRequest on {}", Url);
+        MultipartBody multipartBody = createMultipartBodyForPostRequest(file);
+        return postRequest(Url, multipartBody);
     }
+
+    public Request createDopPostRequest(String dopUrl, MultipartFile file) throws IOException {
+        logger.info("createDopPostRequest on {}", dopUrl);
+        MultipartBody multipartBody = createMultipartBodyForPostRequest(file);
+        return postRequest(dopUrl, multipartBody);
+    }
+
+    public Request postRequest(String Url, MultipartBody multipartBody) {
+        Request.Builder requestBuilder = new Request.Builder()
+                .url(Url)
+                .post(multipartBody)
+                .header("x-apikey", virusTotalProperties.getAPI_KEY())
+                .addHeader("accept", "application/json");
+        return requestBuilder.build();
+    }
+
+    public MultipartBody createMultipartBodyForPostRequest(MultipartFile multipartFile) throws IOException {
+        MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+        return multipartBuilder
+                .setType(MultipartBody.FORM)
+                .addFormDataPart("file", multipartFile.getOriginalFilename(),
+                        okhttp3.RequestBody.create(multipartFile.getBytes(), MediaType.parse("application/octet-stream")))
+                .build();
+    }
+
+
 }

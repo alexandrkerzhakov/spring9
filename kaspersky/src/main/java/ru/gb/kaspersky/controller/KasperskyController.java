@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.multipart.MultipartFile;
+import ru.gb.kaspersky.config.FileWriteGateWay;
 import ru.gb.kaspersky.model.AnalysesFile;
 import ru.gb.kaspersky.model.DomainInfo;
 import ru.gb.kaspersky.model.IpInfo;
@@ -22,15 +23,16 @@ public class KasperskyController {
     @Autowired
     private KasperskyService kasperskyService;
 
+    @Autowired
+    private FileWriteGateWay fileWriteGateWay;
+
     @GetMapping("/ip")
-    public String getIp(@RequestParam("ip") String ip, Model model) {
+    public String getIpInfo(@RequestParam("ip") String ip, Model model) {
 
         Request request = kasperskyService.createGetRequest("search/", "ip?request=", ip);
-        System.out.println(request);
         String json = kasperskyService.getResponseString(request).orElseThrow();
-        System.out.println(json);
+        fileWriteGateWay.writeToFile("ipInfo.txt", json);
         IpInfo ipInfoInstance = kasperskyService.getInstance(json, IpInfo.class);
-        System.out.println(ipInfoInstance);
         model.addAttribute("ipInfoInstance", ipInfoInstance);
 
         return "kaspersky/ip_info";

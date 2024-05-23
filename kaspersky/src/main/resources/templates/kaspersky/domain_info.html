@@ -5,75 +5,12 @@
     <title>IP Info</title>
     <meta name="description" content="IP-address information">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h2, h3 {
-            color: #333;
-        }
-
-        form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        div {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: inline-block;
-            width: 150px;
-            font-weight: bold;
-            color: #444;
-        }
-
-        span {
-            margin-left: 10px;
-            color: #666;
-        }
-
-        .table_results {
-            min-width: 300px;
-            overflow: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<form th:object="${domainInfoInstance}">
+<div class="divBody" th:object="${domainInfoInstance}">
     <h2>IP Info:</h2>
-    <div>
+    <div class="divTable">
         <table>
             <thead>
             <tr>
@@ -89,64 +26,67 @@
     </div>
 
     <div>
-        <h2>Domain General Info:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Files Count</th>
-                <th>Urls Count</th>
-                <th>Hits Count</th>
-                <th>Domain</th>
-                <th>Ipv4 Count</th>
-                <th>Categories</th>
-                <th>Categories with Zone</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${domainInfoInstance.domainGeneralInfo.filesCount}"></td>
-                <td th:text="${domainInfoInstance.domainGeneralInfo.urlsCount}"></td>
-                <td th:text="${domainInfoInstance.domainGeneralInfo.hitsCount}"></td>
-                <td th:text="${domainInfoInstance.domainGeneralInfo.domain}"></td>
-                <td th:text="${domainInfoInstance.domainGeneralInfo.ipv4Count}"></td>
-                <td th:text="${#strings.listJoin(domainInfoInstance.domainGeneralInfo.categories, ', ')}"></td>
-                <td th:text="${#strings.listJoin(domainInfoInstance.domainGeneralInfo.categoriesWithZone, ', ')}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <h3>Domain General Info:</h3>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>Files Count</th>
+                    <th>Urls Count</th>
+                    <th>Hits Count</th>
+                    <th>Domain</th>
+                    <th>Ipv4 Count</th>
+                    <th>Categories</th>
+                    <th>Categories with Zone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${domainInfoInstance.domainGeneralInfo.filesCount}"></td>
+                    <td th:text="${domainInfoInstance.domainGeneralInfo.urlsCount}"></td>
+                    <td th:text="${domainInfoInstance.domainGeneralInfo.hitsCount}"></td>
+                    <td th:text="${domainInfoInstance.domainGeneralInfo.domain}"></td>
+                    <td th:text="${domainInfoInstance.domainGeneralInfo.ipv4Count}"></td>
+                    <td th:text="${#strings.listJoin(domainInfoInstance.domainGeneralInfo.categories, ', ')}"></td>
+                    <td th:text="${#strings.listJoin(domainInfoInstance.domainGeneralInfo.categoriesWithZone, ', ')}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div>
-        <h2>Domain WhoIs Info:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Domain Name</th>
-                <th>Created</th>
-                <th>Expires</th>
-                <th>Name Servers</th>
-                <th>Contacts</th>
-                <th>Registrar Info</th>
-                <th>Domain Status</th>
-                <th>Registration Organization</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${domainInfoInstance.domainWhoIsInfo.domainName}"></td>
-                <td th:text="${domainInfoInstance.domainWhoIsInfo.created}"></td>
-                <td th:text="${domainInfoInstance.domainWhoIsInfo.expires}"></td>
-                <td th:text="${#strings.listJoin(domainInfoInstance.domainWhoIsInfo.nameServers, ', ')}"></td>
-                <td th:text="${#strings.listJoin(domainInfoInstance.domainWhoIsInfo.contacts, ', ')}"></td>
-                <td th:text="${domainInfoInstance.domainWhoIsInfo.registrar.info}"></td>
-                <td th:text="${#strings.listJoin(domainInfoInstance.domainWhoIsInfo.domainStatus, ', ')}"></td>
-                <td th:text="${domainInfoInstance.domainWhoIsInfo.registrationOrganization}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <h3>Domain WhoIs Info:</h3>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>Domain Name</th>
+                    <th>Created</th>
+                    <th>Expires</th>
+                    <th>Name Servers</th>
+                    <th>Contacts</th>
+                    <th>Registrar Info</th>
+                    <th>Domain Status</th>
+                    <th>Registration Organization</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${domainInfoInstance.domainWhoIsInfo.domainName}"></td>
+                    <td th:text="${domainInfoInstance.domainWhoIsInfo.created}"></td>
+                    <td th:text="${domainInfoInstance.domainWhoIsInfo.expires}"></td>
+                    <td th:text="${#strings.listJoin(domainInfoInstance.domainWhoIsInfo.nameServers, ', ')}"></td>
+                    <td th:text="${#strings.listJoin(domainInfoInstance.domainWhoIsInfo.contacts, ', ')}"></td>
+                    <td th:text="${domainInfoInstance.domainWhoIsInfo.registrar.info}"></td>
+                    <td th:text="${#strings.listJoin(domainInfoInstance.domainWhoIsInfo.domainStatus, ', ')}"></td>
+                    <td th:text="${domainInfoInstance.domainWhoIsInfo.registrationOrganization}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
-</form>
+</div>
 </body>
 </html>
 

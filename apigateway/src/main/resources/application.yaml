@@ -11,7 +11,18 @@ spring:
           uri: http://localhost:8081/
           predicates:
             - Path=/virusTotal/**
+
         - id: kaspersky
           uri: http://localhost:8082/
           predicates:
             - Path=/kaspersky/**
+
+        - id: cssVirusTotal
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/css/**
+
+        - id: cssKaspersky
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/css/**

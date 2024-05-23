@@ -5,78 +5,14 @@
     <title>IP Comments</title>
     <meta name="description" content="IP-address comments">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h2, h3 {
-            color: #333;
-        }
-
-        form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        div {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: inline-block;
-            width: 150px;
-            font-weight: bold;
-            color: #444;
-        }
-
-        span {
-            margin-left: 10px;
-            color: #666;
-        }
-
-        .table_results {
-            min-width: 300px;
-            overflow: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<form th:object="${ipCommentsInstance}">
+<div class="divBody" th:object="${ipCommentsInstance}">
     <div>
-        <h1>IP Comments:</h1>
-
-        <div>
-            <tr th:each="data : ${ipCommentsInstance.data}">
+        <h2>IP Comments:</h2>
+        <div th:each="data : ${ipCommentsInstance.data}">
+            <div class="divTable">
                 <table>
                     <thead>
                     <tr>
@@ -93,9 +29,11 @@
                     </tr>
                     </tbody>
                 </table>
+            </div>
 
-                <div>
-                    <h2>Attributes:</h2>
+            <div>
+                <h3>Attributes:</h3>
+                <div class="divTable">
                     <table>
                         <thead>
                         <tr>
@@ -114,9 +52,11 @@
                         </tr>
                         </tbody>
                     </table>
+                </div>
 
-                    <div>
-                        <h3>Votes:</h3>
+                <div>
+                    <h4>Votes:</h4>
+                    <div class="divTable">
                         <table>
                             <thead>
                             <tr>
@@ -135,42 +75,47 @@
                         </table>
                     </div>
                 </div>
-        </div>
+            </div>
 
-        <div>
-            <h2>Meta:</h2>
-            <table>
-                <thead>
-                <tr>
-                    <th>Count</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td th:text="${ipCommentsInstance.meta.count}"></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+            <div>
+                <h3>Meta:</h3>
+                <div class="divTable">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Count</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td th:text="${ipCommentsInstance.meta.count}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-        <div>
-            <h2>Links:</h2>
-            <table>
-                <thead>
-                <tr>
-                    <th>Self Link</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td th:text="${ipCommentsInstance.links.self}"></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+            <div>
+                <h3>Links:</h3>
+                <div class="divTable">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Self Link</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td th:text="${ipCommentsInstance.links.self}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
+        </div>
     </div>
-</form>
+</div>
 </body>
 </html>
 

@@ -5,75 +5,12 @@
     <title>URL Info</title>
     <meta name="description" content="URL information">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h2, h3 {
-            color: #333;
-        }
-
-        form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        div {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: inline-block;
-            width: 150px;
-            font-weight: bold;
-            color: #444;
-        }
-
-        span {
-            margin-left: 10px;
-            color: #666;
-        }
-
-        .table_results {
-            min-width: 300px;
-            overflow: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<form th:object="${urlInfoInstance}">
+<div th:object="${urlInfoInstance}">
     <h2>URL Info:</h2>
-    <div>
+    <div class="divTable">
         <table>
             <thead>
             <tr>
@@ -90,103 +27,110 @@
 
     <div>
         <h2>File General Info:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>File Status</th>
-                <th>SHA1</th>
-                <th>MD5</th>
-                <th>SHA256</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.fileStatus}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.sha1}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.md5}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.sha256}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>File Status</th>
+                    <th>SHA1</th>
+                    <th>MD5</th>
+                    <th>SHA256</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.fileStatus}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.sha1}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.md5}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.sha256}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>First Seen</th>
+                    <th>Last Seen</th>
+                    <th>Signer</th>
+                    <th>Packer</th>
+                    <th>Size</th>
+                    <th>Type</th>
+                    <th>Hits Count</th>
+                    <th>Last Detect Date</th>
+                    <th>Description URL</th>
+                    <th>Zone</th>
+                    <th>Detection Name</th>
+                    <th>Detection Method</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.firstSeen}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.lastSeen}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.signer}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.packer}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.size}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.type}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.hitsCount}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.lastDetectDate}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.descriptionUrl}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.zone}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.detectionName}"></td>
+                    <td th:text="${analysesFileInstance.fileGeneralInfo.detectionMethod}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2>Detections Info:</h2>
+            <div class="divTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Zone</th>
+                        <th>Detection Name</th>
+                        <th>Detection Method</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <tr th:each="info : ${analysesFileInstance.fileGeneralInfo.detectionsInfo}">
+                        <td th:text="${info.zone}"></td>
+                        <td th:text="${info.detectionName}"></td>
+                        <td th:text="${info.detectionMethod}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <h2>Dynamic Detections:</h2>
+            <div class="divTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Zone</th>
+                        <th>Threat</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <tr th:each="detection : ${analysesFileInstance.fileGeneralInfo.dynamicDetections}">
+                        <td th:text="${detection.zone}"></td>
+                        <td th:text="${detection.threat}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 
-    <div>
-        <table>
-            <thead>
-            <tr>
-                <th>First Seen</th>
-                <th>Last Seen</th>
-                <th>Signer</th>
-                <th>Packer</th>
-                <th>Size</th>
-                <th>Type</th>
-                <th>Hits Count</th>
-                <th>Last Detect Date</th>
-                <th>Description URL</th>
-                <th>Zone</th>
-                <th>Detection Name</th>
-                <th>Detection Method</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.firstSeen}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.lastSeen}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.signer}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.packer}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.size}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.type}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.hitsCount}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.lastDetectDate}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.descriptionUrl}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.zone}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.detectionName}"></td>
-                <td th:text="${analysesFileInstance.fileGeneralInfo.detectionMethod}"></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div>
-        <h2>Detections Info:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Zone</th>
-                <th>Detection Name</th>
-                <th>Detection Method</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <tr th:each="info : ${analysesFileInstance.fileGeneralInfo.detectionsInfo}">
-                <td th:text="${info.zone}"></td>
-                <td th:text="${info.detectionName}"></td>
-                <td th:text="${info.detectionMethod}"></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div>
-        <h2>Dynamic Detections:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Zone</th>
-                <th>Threat</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <tr th:each="detection : ${analysesFileInstance.fileGeneralInfo.dynamicDetections}">
-                <td th:text="${detection.zone}"></td>
-                <td th:text="${detection.threat}"></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-</form>
+</div>
 </body>
 </html>

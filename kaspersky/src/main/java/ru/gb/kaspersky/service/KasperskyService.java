@@ -22,11 +22,18 @@ public class KasperskyService {
     private KasperskyProperties kasperskyProperties;
 
     public Request createGetRequest(String operation, String typeRequest, String parameter) {
-        String URL = kasperskyProperties.getBASE_URL() + operation + typeRequest + parameter;
-        logger.info("createGetRequest on {}", URL);
-        System.out.println(URL);
+        String Url = createUrl(kasperskyProperties.getBASE_URL() + operation + typeRequest + parameter);
+        logger.info("createGetRequest on {}", Url);
+        return getRequest(Url);
+    }
+
+    public String createUrl(String... parts) {
+        return String.join("", parts);
+    }
+
+    public Request getRequest(String Url) {
         Request.Builder requestBuilder = new Request.Builder()
-                .url(URL)
+                .url(Url)
                 .get()
                 .header("x-api-key", kasperskyProperties.getAPI_KEY())
                 .addHeader("accept", "application/json");
@@ -35,12 +42,7 @@ public class KasperskyService {
 
     public Optional<String> getResponseString(Request request) {
 
-        OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder()
-                .connectTimeout(60, TimeUnit.SECONDS)
-                .readTimeout(60, TimeUnit.SECONDS)
-                .writeTimeout(60, TimeUnit.SECONDS);
-
-        OkHttpClient okHttpClient = okHttpClientBuilder.build();
+        OkHttpClient okHttpClient = createOkHttpClient();
 
         try (Response response = okHttpClient.newCall(request).execute()) {
             return Optional.ofNullable(response.body())
@@ -60,6 +62,14 @@ public class KasperskyService {
         }
     }
 
+    public OkHttpClient createOkHttpClient() {
+        OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder()
+                .connectTimeout(30, TimeUnit.SECONDS)
+                .readTimeout(30, TimeUnit.SECONDS)
+                .writeTimeout(30, TimeUnit.SECONDS);
+        return okHttpClientBuilder.build();
+    }
+
     public <T> T getInstance(String json, Class<T> tClass) {
         T instance = null;
         try {
@@ -72,21 +82,27 @@ public class KasperskyService {
     }
 
     public Request createPostRequest(String operation, String typeRequest, MultipartFile file) throws IOException {
-        String URL = kasperskyProperties.getBASE_URL() + operation + typeRequest + file.getOriginalFilename();
-        logger.info("createPostRequest on {}", URL);
+        String Url = createUrl(kasperskyProperties.getBASE_URL() + operation + typeRequest + file.getOriginalFilename());
+        logger.info("createPostRequest on {}", Url);
+        MultipartBody multipartBody = createMultipartBodyForPostRequest(file);
+        return postRequest(Url, multipartBody);
+    }
 
-        MultipartBody.Builder multipartBuilder = new MultipartBody.Builder()
-                .setType(MultipartBody.FORM)
-                .addFormDataPart("file", file.getOriginalFilename(),
-                        RequestBody.create(file.getBytes(), MediaType.parse("application/octet-stream")));
-
+    public Request postRequest(String Url, MultipartBody multipartBody) {
         Request.Builder requestBuilder = new Request.Builder()
-                .url(URL)
-                .post(multipartBuilder.build())
+                .url(Url)
+                .post(multipartBody)
                 .header("x-api-key", kasperskyProperties.getAPI_KEY())
-//                .addHeader("content-type", "multipart/form-data")
-                .addHeader("accept", "application/octet-stream");
-
+                .addHeader("accept", "application/json");
         return requestBuilder.build();
+    }
+
+    public MultipartBody createMultipartBodyForPostRequest(MultipartFile multipartFile) throws IOException {
+        MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+        return multipartBuilder
+                .setType(MultipartBody.FORM)
+                .addFormDataPart("file", multipartFile.getOriginalFilename(),
+                        okhttp3.RequestBody.create(multipartFile.getBytes(), MediaType.parse("application/octet-stream")))
+                .build();
     }
 }

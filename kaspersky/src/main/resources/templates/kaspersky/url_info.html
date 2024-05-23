@@ -5,75 +5,12 @@
     <title>URL Info</title>
     <meta name="description" content="URL information">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h2, h3 {
-            color: #333;
-        }
-
-        form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        div {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: inline-block;
-            width: 150px;
-            font-weight: bold;
-            color: #444;
-        }
-
-        span {
-            margin-left: 10px;
-            color: #666;
-        }
-
-        .table_results {
-            min-width: 300px;
-            overflow: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<form th:object="${urlInfoInstance}">
+<div class="divBody" th:object="${urlInfoInstance}">
     <h2>URL Info:</h2>
-    <div>
+    <div class="divTable">
         <table>
             <thead>
             <tr>
@@ -89,112 +26,120 @@
     </div>
 
     <div>
-        <h2>URL General Info:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>URL</th>
-                <th>Host</th>
-                <th>Ipv4 Count</th>
-                <th>Files Count</th>
-                <th>Categories</th>
-                <th>Categories with Zone</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${urlInfoInstance.urlGeneralInfo.url}"></td>
-                <td th:text="${urlInfoInstance.urlGeneralInfo.host}"></td>
-                <td th:text="${urlInfoInstance.urlGeneralInfo.ipv4Count}"></td>
-                <td th:text="${urlInfoInstance.urlGeneralInfo.filesCount}"></td>
-                <td th:text="${#strings.listJoin(urlInfoInstance.urlGeneralInfo.categories, ', ')}"></td>
-                <td th:text="${#strings.listJoin(urlInfoInstance.urlGeneralInfo.categoriesWithZone, ', ')}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <h3>URL General Info:</h3>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>URL</th>
+                    <th>Host</th>
+                    <th>Ipv4 Count</th>
+                    <th>Files Count</th>
+                    <th>Categories</th>
+                    <th>Categories with Zone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${urlInfoInstance.urlGeneralInfo.url}"></td>
+                    <td th:text="${urlInfoInstance.urlGeneralInfo.host}"></td>
+                    <td th:text="${urlInfoInstance.urlGeneralInfo.ipv4Count}"></td>
+                    <td th:text="${urlInfoInstance.urlGeneralInfo.filesCount}"></td>
+                    <td th:text="${#strings.listJoin(urlInfoInstance.urlGeneralInfo.categories, ', ')}"></td>
+                    <td th:text="${#strings.listJoin(urlInfoInstance.urlGeneralInfo.categoriesWithZone, ', ')}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div>
-        <h2>URL Domain WhoIs:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Domain Name</th>
-                <th>Created</th>
-                <th>Expires</th>
-                <th>Name Servers</th>
-                <th>Domain Status</th>
-                <th>Registration Organization</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${urlInfoInstance.urlDomainWhoIs.domainName}"></td>
-                <td th:text="${urlInfoInstance.urlDomainWhoIs.created}"></td>
-                <td th:text="${urlInfoInstance.urlDomainWhoIs.expires}"></td>
-                <td th:text="${#strings.listJoin(urlInfoInstance.urlDomainWhoIs.nameServers, ', ')}"></td>
-                <td th:text="${#strings.listJoin(urlInfoInstance.urlDomainWhoIs.domainStatus, ', ')}"></td>
-                <td th:text="${urlInfoInstance.urlDomainWhoIs.registrationOrganization}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <h3>URL Domain WhoIs:</h3>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>Domain Name</th>
+                    <th>Created</th>
+                    <th>Expires</th>
+                    <th>Name Servers</th>
+                    <th>Domain Status</th>
+                    <th>Registration Organization</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${urlInfoInstance.urlDomainWhoIs.domainName}"></td>
+                    <td th:text="${urlInfoInstance.urlDomainWhoIs.created}"></td>
+                    <td th:text="${urlInfoInstance.urlDomainWhoIs.expires}"></td>
+                    <td th:text="${#strings.listJoin(urlInfoInstance.urlDomainWhoIs.nameServers, ', ')}"></td>
+                    <td th:text="${#strings.listJoin(urlInfoInstance.urlDomainWhoIs.domainStatus, ', ')}"></td>
+                    <td th:text="${urlInfoInstance.urlDomainWhoIs.registrationOrganization}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div>
+            <h3>Registar:</h3>
+            <div class="divTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Registrar Info</th>
+                        <th>Registrar IanaId</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td th:text="${urlInfoInstance.urlDomainWhoIs.registrar.info}"></td>
+                        <td th:text="${urlInfoInstance.urlDomainWhoIs.registrar.ianaId}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <h2>Contacts:</h2>
+            <div class="divTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Contact Type</th>
+                        <th>Name</th>
+                        <th>Organization</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Country Code</th>
+                        <th>Phone</th>
+                        <th>Fax</th>
+                        <th>Email</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <tr th:each="contact : ${urlInfoInstance.urlDomainWhoIs.contacts}">
+                        <td th:text="${contact.contactType}"></td>
+                        <td th:text="${contact.name}"></td>
+                        <td th:text="${contact.organization}"></td>
+                        <td th:text="${contact.address}"></td>
+                        <td th:text="${contact.city}"></td>
+                        <td th:text="${contact.state}"></td>
+                        <td th:text="${contact.countryCode}"></td>
+                        <td th:text="${contact.phone}"></td>
+                        <td th:text="${contact.fax}"></td>
+                        <td th:text="${contact.email}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
-
-    <div>
-        <h2>Registar:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Registrar Info</th>
-                <th>Registrar IanaId</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${urlInfoInstance.urlDomainWhoIs.registrar.info}"></td>
-                <td th:text="${urlInfoInstance.urlDomainWhoIs.registrar.ianaId}"></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div>
-        <h2>Contacts:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Contact Type</th>
-                <th>Name</th>
-                <th>Organization</th>
-                <th>Address</th>
-                <th>City</th>
-                <th>State</th>
-                <th>Country Code</th>
-                <th>Phone</th>
-                <th>Fax</th>
-                <th>Email</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <tr th:each="contact : ${urlInfoInstance.urlDomainWhoIs.contacts}">
-                <td th:text="${contact.contactType}"></td>
-                <td th:text="${contact.name}"></td>
-                <td th:text="${contact.organization}"></td>
-                <td th:text="${contact.address}"></td>
-                <td th:text="${contact.city}"></td>
-                <td th:text="${contact.state}"></td>
-                <td th:text="${contact.countryCode}"></td>
-                <td th:text="${contact.phone}"></td>
-                <td th:text="${contact.fax}"></td>
-                <td th:text="${contact.email}"></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-</form>
+</div>
 </body>
 </html>
 

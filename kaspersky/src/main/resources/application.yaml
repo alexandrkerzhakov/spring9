@@ -14,3 +14,9 @@ spring:
 kaspersky:
   BASE_URL: https://opentip.kaspersky.com/api/v1/
   API_KEY: jBRRo//wQ1ewWHTda5322Q==
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics, prometheus, health

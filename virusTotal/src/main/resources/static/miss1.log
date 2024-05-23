@@ -1,0 +1,1501 @@
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): icanhazip.com:80
+DEBUG:urllib3.connectionpool:http://icanhazip.com:80 "GET / HTTP/1.1" 200 15
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52268/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--proxy-server=socks5://127.0.0.1:9050", "accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", "accept-encoding=gzip, deflate, br", "connection=keep-alive", "user-agent=Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/4.0.221.8 Safari/532.2"]}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:52268
+DEBUG:urllib3.connectionpool:http://localhost:52268 "POST /session HTTP/1.1" 200 861
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"117.0.5938.89","chrome":{"chromedriverVersion":"117.0.5938.88 (be6afae4721209be42944bbcd325665f9f44563b-refs/branch-heads/5938_62@{#9})","userDataDir":"C:\\Program Files\\scoped_dir11400_1463523611"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52271"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"b13e14b7fdc1ce28de8cb2de19cc32bc"}} | headers=HTTPHeaderDict({'Content-Length': '861', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:52268/session/b13e14b7fdc1ce28de8cb2de19cc32bc/url {"url": "https://www.missoffice.org/contestants/2023/"}
+DEBUG:urllib3.connectionpool:http://localhost:52268 "POST /session/b13e14b7fdc1ce28de8cb2de19cc32bc/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:root:kill tor + 2023-09-19 15:57:25.481919
+INFO:root:tor run + 2023-09-19 15:57:25.483949
+INFO:root:tor run -> 2023-09-19 16:03:04.068889
+INFO:root:ip_actual -> 192.42.116.185
+INFO:root:get driver -> 2023-09-19 16:03:10.704247
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Кыдырбекова Жанерке
+
+Самарова Татьяна
+
+Морозова Валерия
+Подтвердить date -> 2023-09-19 16:03:56.331481
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 109.70.100.69
+INFO:root:ip_actual -> 109.70.100.69
+INFO:root:get driver -> 2023-09-19 16:04:02.177933
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Громова Елизавета
+
+Петрунь Екатерина
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:06:20.971967
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.42
+INFO:root:ip_actual -> 185.220.101.42
+INFO:root:get driver -> 2023-09-19 16:06:28.577953
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Гарина Олеся
+
+Самарова Татьяна
+
+Капустина Мария
+Подтвердить date -> 2023-09-19 16:07:10.555730
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 5.255.103.132
+INFO:root:ip_actual -> 5.255.103.132
+INFO:root:get driver -> 2023-09-19 16:07:18.838675
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Каминская Нина
+
+Волкова Вера
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:08:43.884057
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.178
+INFO:root:ip_actual -> 192.42.116.178
+INFO:root:get driver -> 2023-09-19 16:08:51.388985
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Крикмейер Виктория
+
+Шеметова Екатерина
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:09:38.141210
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 94.142.241.194
+INFO:root:kill tor -> 2023-09-19 16:11:24.717561
+INFO:root:tor run -> 2023-09-19 16:11:24.719591
+INFO:root:ip_actual -> 185.220.102.240
+INFO:root:get driver -> 2023-09-19 16:11:32.495316
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Деева Анастасия
+
+Патанова Анастасия
+Подтвердить date -> 2023-09-19 16:12:05.145119
+INFO:root:renew connection tor -> 2023-09-19 16:12:06.266390
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:root:ip_current -> 74.208.178.166
+INFO:root:ip_actual -> 74.208.178.166
+INFO:root:get driver -> 2023-09-19 16:12:11.179582
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Пирогова Ольга
+
+Самарова Татьяна
+
+Разова Ксения
+Подтвердить date -> 2023-09-19 16:13:16.047357
+INFO:root:renew connection tor -> 2023-09-19 16:13:20.179611
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.243.218.202
+INFO:root:ip_actual -> 185.243.218.202
+INFO:root:get driver -> 2023-09-19 16:13:25.241016
+INFO:root:tor run -> 2023-09-19 16:13:44.910688
+INFO:root:ip_actual -> 109.70.100.1
+INFO:root:get driver -> 2023-09-19 16:13:51.485965
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Антоненко Надежда
+
+Громова Елизавета
+Подтвердить date -> 2023-09-19 16:15:09.344788
+INFO:root:renew connection tor -> 2023-09-19 16:15:16.469680
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.100.253
+INFO:root:ip_actual -> 185.220.100.253
+INFO:root:get driver -> 2023-09-19 16:15:20.740977
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Хлобыстова Полина
+
+Самарова Татьяна
+
+Юрьева Мария
+Подтвердить date -> 2023-09-19 16:15:59.881909
+INFO:root:renew connection tor -> 2023-09-19 16:16:09.010720
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 45.134.225.36
+INFO:root:ip_actual -> 45.134.225.36
+INFO:root:get driver -> 2023-09-19 16:16:13.258766
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Шеметова Екатерина
+
+Смакова Светлана
+Подтвердить date -> 2023-09-19 16:16:54.121339
+INFO:root:renew connection tor -> 2023-09-19 16:17:02.251842
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 103.196.37.111
+INFO:root:ip_actual -> 103.196.37.111
+INFO:root:get driver -> 2023-09-19 16:17:07.228992
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Холодова Елена
+
+Самарова Татьяна
+
+Мащенская Ольга
+Подтвердить date -> 2023-09-19 16:18:18.002625
+INFO:root:renew connection tor -> 2023-09-19 16:18:25.127760
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.142.239.49
+INFO:root:ip_actual -> 185.142.239.49
+INFO:root:get driver -> 2023-09-19 16:18:29.624825
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Новичкова Юлия
+
+Самарова Татьяна
+
+Атнабаева Ляйсан
+Подтвердить date -> 2023-09-19 16:19:03.996968
+INFO:root:renew connection tor -> 2023-09-19 16:19:12.125660
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 45.151.167.12
+INFO:root:kill tor -> 2023-09-19 16:25:47.066225
+INFO:root:tor run -> 2023-09-19 16:25:47.067747
+INFO:root:ip_actual -> 185.220.101.16
+INFO:root:get driver -> 2023-09-19 16:25:52.938182
+INFO:root:other_id1 -> 48926
+INFO:root:other_id1 -> 48941
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Хвалова Екатерина
+
+Малей Маргарита
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:26:38.699760
+INFO:root:renew connection tor -> 2023-09-19 16:26:41.832372
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:root:ip_current -> 66.146.193.33
+INFO:root:ip_actual -> 66.146.193.33
+INFO:root:get driver -> 2023-09-19 16:26:45.651519
+INFO:root:tor run -> 2023-09-19 16:34:32.801203
+INFO:root:ip_actual -> 192.42.116.217
+INFO:root:get driver -> 2023-09-19 16:34:39.691153
+INFO:root:other_id1 -> 49478
+INFO:root:other_id1 -> 49484
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Антоненко Надежда
+
+Хлобыстова Полина
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:35:29.360066
+INFO:root:renew connection tor -> 2023-09-19 16:35:31.509405
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.174
+INFO:root:ip_actual -> 192.42.116.174
+INFO:root:get driver -> 2023-09-19 16:35:36.307639
+INFO:root:other_id1 -> 49895
+INFO:root:other_id1 -> 50454
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Дривило Алина
+
+Брюханова Юлия
+Подтвердить date -> 2023-09-19 16:36:21.214030
+INFO:root:renew connection tor -> 2023-09-19 16:36:24.341869
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:kill tor -> 2023-09-19 16:37:03.120463
+INFO:root:tor run -> 2023-09-19 16:37:03.121987
+INFO:root:ip_actual -> 192.42.116.209
+INFO:root:get driver -> 2023-09-19 16:37:09.061960
+INFO:root:other_id1 -> 49484
+INFO:root:other_id1 -> 50448
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Хлобыстова Полина
+
+Ким Наталья
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:38:12.186952
+INFO:root:renew connection tor -> 2023-09-19 16:38:15.320457
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.160
+INFO:root:ip_actual -> 185.220.101.160
+INFO:root:get driver -> 2023-09-19 16:38:19.852410
+INFO:root:other_id1 -> 48928
+INFO:root:other_id1 -> 50059
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Герман Лилия
+
+Копанева Александра
+Подтвердить date -> 2023-09-19 16:39:34.139739
+INFO:root:renew connection tor -> 2023-09-19 16:39:38.270416
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.191
+INFO:root:ip_actual -> 192.42.116.191
+INFO:root:get driver -> 2023-09-19 16:39:43.327885
+INFO:root:other_id1 -> 49480
+INFO:root:other_id1 -> 49437
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Накруткина Марина
+
+Самарова Татьяна
+
+Деева Анастасия
+Подтвердить date -> 2023-09-19 16:41:21.926457
+INFO:root:renew connection tor -> 2023-09-19 16:41:26.051552
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.102.242
+INFO:root:ip_actual -> 185.220.102.242
+INFO:root:get driver -> 2023-09-19 16:41:30.196324
+INFO:root:other_id1 -> 49656
+INFO:root:other_id1 -> 48941
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Мусорова Анна
+
+Малей Маргарита
+Подтвердить date -> 2023-09-19 16:42:41.611266
+INFO:root:renew connection tor -> 2023-09-19 16:42:45.740447
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 87.118.122.51
+INFO:root:ip_actual -> 87.118.122.51
+INFO:root:get driver -> 2023-09-19 16:42:51.397039
+INFO:root:kill tor -> 2023-09-19 16:43:14.983782
+INFO:root:tor run -> 2023-09-19 16:43:14.985814
+INFO:root:ip_actual -> 185.244.24.42
+INFO:root:get driver -> 2023-09-19 16:43:20.930743
+INFO:root:other_id1 -> 48938
+INFO:root:other_id1 -> 48769
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Воротынцева Алина
+
+Ковалевская Ксения
+Подтвердить date -> 2023-09-19 16:44:06.970860
+INFO:root:renew connection tor -> 2023-09-19 16:44:08.086030
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.13
+INFO:root:ip_actual -> 192.42.116.13
+INFO:root:get driver -> 2023-09-19 16:44:12.386826
+INFO:root:other_id1 -> 48928
+INFO:root:other_id1 -> 49371
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Копанева Александра
+
+Вишняк Ксения
+Подтвердить date -> 2023-09-19 16:44:53.804179
+INFO:root:renew connection tor -> 2023-09-19 16:44:56.933777
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.102.8
+INFO:root:ip_actual -> 185.220.102.8
+INFO:root:get driver -> 2023-09-19 16:45:01.203454
+INFO:root:other_id1 -> 49437
+INFO:root:other_id1 -> 48614
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Горбунова Валентина
+
+Накруткина Марина
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:45:37.042709
+INFO:root:renew connection tor -> 2023-09-19 16:45:42.178200
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 107.189.8.181
+INFO:root:ip_actual -> 107.189.8.181
+INFO:root:get driver -> 2023-09-19 16:45:46.669382
+INFO:root:other_id1 -> 49561
+INFO:root:other_id1 -> 48939
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Пальмина Анна
+
+Зиятдинова Ксения
+Подтвердить date -> 2023-09-19 16:46:30.688584
+INFO:root:renew connection tor -> 2023-09-19 16:46:33.821253
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.195
+INFO:root:ip_actual -> 192.42.116.195
+INFO:root:get driver -> 2023-09-19 16:46:38.614936
+INFO:root:other_id1 -> 49562
+INFO:root:other_id1 -> 50458
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Климушина Екатерина
+
+Чубукова Анастасия
+Подтвердить date -> 2023-09-19 16:47:24.254806
+INFO:root:renew connection tor -> 2023-09-19 16:47:29.386764
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 23.137.251.61
+INFO:root:ip_actual -> 23.137.251.61
+INFO:root:get driver -> 2023-09-19 16:47:33.728375
+INFO:root:other_id1 -> 48982
+INFO:root:other_id1 -> 50430
+INFO:root:Exception
+INFO:root:kill tor -> 2023-09-19 16:48:10.855280
+INFO:root:tor run -> 2023-09-19 16:48:10.856794
+INFO:root:ip_actual -> 109.70.100.66
+INFO:root:get driver -> 2023-09-19 16:48:17.206896
+INFO:root:other_id1 -> 50447
+INFO:root:other_id1 -> 48924
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Алещенко Ксения
+
+Колпакова Маргарита
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:49:09.780049
+INFO:root:renew connection tor -> 2023-09-19 16:49:11.912760
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 45.141.215.56
+INFO:root:ip_actual -> 45.141.215.56
+INFO:root:get driver -> 2023-09-19 16:49:17.270816
+INFO:root:other_id1 -> 49897
+INFO:root:other_id1 -> 49438
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Кологреева Евгения
+
+Матвеева Евгения
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:50:08.231862
+INFO:root:renew connection tor -> 2023-09-19 16:50:13.362445
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 199.195.253.156
+INFO:root:ip_actual -> 199.195.253.156
+INFO:root:get driver -> 2023-09-19 16:50:18.204979
+INFO:root:other_id1 -> 49373
+INFO:root:other_id1 -> 48984
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Трунова Кристина
+
+Москвитина Наталья
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:51:28.451795
+INFO:root:renew connection tor -> 2023-09-19 16:51:31.594279
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 178.17.174.164
+INFO:root:ip_actual -> 178.17.174.164
+INFO:root:get driver -> 2023-09-19 16:51:36.169608
+INFO:root:other_id1 -> 49435
+INFO:root:other_id1 -> 48945
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Ушакова Элина
+
+Григорьева Светлана
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:52:08.696867
+INFO:root:renew connection tor -> 2023-09-19 16:52:13.838352
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 45.141.215.80
+INFO:root:ip_actual -> 45.141.215.80
+INFO:root:get driver -> 2023-09-19 16:52:18.493960
+INFO:root:other_id1 -> 50443
+INFO:root:other_id1 -> 48540
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Трифонова Елена
+
+Бедункевич Анна
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:53:04.840997
+INFO:root:renew connection tor -> 2023-09-19 16:53:07.977129
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.12
+INFO:root:ip_actual -> 185.220.101.12
+INFO:root:get driver -> 2023-09-19 16:53:12.563838
+INFO:root:other_id1 -> 50430
+INFO:root:other_id1 -> 50428
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Патанова Анастасия
+
+Громова Елизавета
+Подтвердить date -> 2023-09-19 16:53:49.649210
+INFO:root:renew connection tor -> 2023-09-19 16:53:53.793450
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 78.142.18.219
+INFO:root:ip_actual -> 78.142.18.219
+INFO:root:get driver -> 2023-09-19 16:53:58.113668
+INFO:root:other_id1 -> 48683
+INFO:root:other_id1 -> 50446
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Кыдырбекова Жанерке
+
+Александрова Мария
+Подтвердить date -> 2023-09-19 16:54:42.382720
+INFO:root:renew connection tor -> 2023-09-19 16:54:46.520133
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.139
+INFO:root:ip_actual -> 185.220.101.139
+INFO:root:get driver -> 2023-09-19 16:54:50.808192
+INFO:root:other_id1 -> 50149
+INFO:root:other_id1 -> 49562
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Климушина Екатерина
+
+Глухова Ксения
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:55:34.591064
+INFO:root:renew connection tor -> 2023-09-19 16:55:39.744609
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:root:ip_current -> 107.189.1.160
+INFO:root:ip_actual -> 107.189.1.160
+INFO:root:get driver -> 2023-09-19 16:55:43.907366
+INFO:root:other_id1 -> 49655
+INFO:root:other_id1 -> 48686
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Барбашина Дарья
+
+Волкова Екатерина
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:56:25.491256
+INFO:root:renew connection tor -> 2023-09-19 16:56:30.637320
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 23.137.251.61
+INFO:root:ip_actual -> 23.137.251.61
+INFO:root:get driver -> 2023-09-19 16:56:34.892205
+INFO:root:other_id1 -> 49900
+INFO:root:other_id1 -> 50444
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Верхолаз Екатерина
+
+Самарова Татьяна
+
+Холодова Елена
+Подтвердить date -> 2023-09-19 16:57:16.010856
+INFO:root:renew connection tor -> 2023-09-19 16:57:21.158215
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.191
+INFO:root:ip_actual -> 192.42.116.191
+INFO:root:get driver -> 2023-09-19 16:57:25.313835
+INFO:root:other_id1 -> 48925
+INFO:root:other_id1 -> 49478
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Максимова Дарья
+
+Антоненко Надежда
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 16:58:18.569992
+INFO:root:renew connection tor -> 2023-09-19 16:58:22.738437
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:root:ip_current -> 185.220.103.115
+INFO:root:ip_actual -> 185.220.103.115
+INFO:root:get driver -> 2023-09-19 16:58:27.170055
+INFO:root:other_id1 -> 50059
+INFO:root:other_id1 -> 49372
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Герман Лилия
+
+Самарова Татьяна
+
+Кошкина Кристина
+Подтвердить date -> 2023-09-19 16:59:53.137987
+INFO:root:renew connection tor -> 2023-09-19 16:59:56.287921
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:root:ip_current -> 185.243.218.89
+INFO:root:ip_actual -> 185.243.218.89
+INFO:root:get driver -> 2023-09-19 17:00:00.743648
+INFO:root:other_id1 -> 48543
+INFO:root:other_id1 -> 48943
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Петрова Анастасия
+
+Самарова Татьяна
+
+Косый Татьяна
+Подтвердить date -> 2023-09-19 17:00:43.655728
+INFO:root:renew connection tor -> 2023-09-19 17:00:48.791895
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:root:ip_current -> 185.220.101.24
+INFO:root:ip_actual -> 185.220.101.24
+INFO:root:get driver -> 2023-09-19 17:00:52.985377
+INFO:root:other_id1 -> 50432
+INFO:root:other_id1 -> 49902
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Прокопенко Мирослава
+
+Якубова Анна
+Подтвердить date -> 2023-09-19 17:02:11.932985
+INFO:root:renew connection tor -> 2023-09-19 17:02:16.075205
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.200
+INFO:root:ip_actual -> 192.42.116.200
+INFO:root:get driver -> 2023-09-19 17:02:20.371399
+INFO:root:other_id1 -> 49724
+INFO:root:other_id1 -> 48764
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Гуреева Екатерина
+
+Самарова Татьяна
+
+Пашкевич Надежда
+Подтвердить date -> 2023-09-19 17:03:50.639744
+INFO:root:renew connection tor -> 2023-09-19 17:03:54.793619
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.86
+INFO:root:ip_actual -> 185.220.101.86
+INFO:root:get driver -> 2023-09-19 17:03:59.069531
+INFO:root:other_id1 -> 48944
+INFO:root:other_id1 -> 48938
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Воротынцева Алина
+
+Пихтерова Анастасия
+Подтвердить date -> 2023-09-19 17:05:03.254572
+INFO:root:renew connection tor -> 2023-09-19 17:05:08.395812
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:root:ip_current -> 149.56.22.133
+INFO:root:ip_actual -> 149.56.22.133
+INFO:root:get driver -> 2023-09-19 17:05:13.393020
+INFO:root:other_id1 -> 49373
+INFO:root:other_id1 -> 49371
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Вишняк Ксения
+
+Самарова Татьяна
+
+Трунова Кристина
+Подтвердить date -> 2023-09-19 17:06:20.444354
+INFO:root:renew connection tor -> 2023-09-19 17:06:25.596475
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0015)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 193.235.207.238
+INFO:root:ip_actual -> 193.235.207.238
+INFO:root:get driver -> 2023-09-19 17:06:31.270082
+INFO:root:other_id1 -> 48767
+INFO:root:other_id1 -> 50455
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Тюплина Дарья
+
+Самарова Татьяна
+
+Глазатова Татьяна
+Подтвердить date -> 2023-09-19 17:07:24.125193
+INFO:root:renew connection tor -> 2023-09-19 17:07:29.279327
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 45.151.167.10
+INFO:root:ip_actual -> 45.151.167.10
+INFO:root:get driver -> 2023-09-19 17:07:33.697648
+INFO:root:other_id1 -> 50425
+INFO:root:other_id1 -> 50058
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Бондаренко Эльвира
+
+Самарова Татьяна
+
+Василевич Мария
+Подтвердить date -> 2023-09-19 17:08:20.172861
+INFO:root:renew connection tor -> 2023-09-19 17:08:25.315481
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.7
+INFO:root:ip_actual -> 185.220.101.7
+INFO:root:get driver -> 2023-09-19 17:08:29.429244
+INFO:root:other_id1 -> 48616
+INFO:root:other_id1 -> 48767
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Тюплина Дарья
+
+Трясцына Алена
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:09:02.275901
+INFO:root:renew connection tor -> 2023-09-19 17:09:06.421658
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.174
+INFO:root:ip_actual -> 192.42.116.174
+INFO:root:get driver -> 2023-09-19 17:09:11.051685
+INFO:root:other_id1 -> 48687
+INFO:root:other_id1 -> 49246
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Зырянова Анна
+
+Максимова Влада
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:10:08.621534
+INFO:root:renew connection tor -> 2023-09-19 17:10:11.767605
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.102.253
+INFO:root:ip_actual -> 185.220.102.253
+INFO:root:get driver -> 2023-09-19 17:10:15.944275
+INFO:root:other_id1 -> 50443
+INFO:root:other_id1 -> 49900
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Трифонова Елена
+
+Верхолаз Екатерина
+Подтвердить date -> 2023-09-19 17:10:47.670480
+INFO:root:renew connection tor -> 2023-09-19 17:10:52.816647
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.53
+INFO:root:ip_actual -> 185.220.101.53
+INFO:root:get driver -> 2023-09-19 17:10:57.513101
+INFO:root:other_id1 -> 50426
+INFO:root:other_id1 -> 48769
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Тукиш Дарья
+
+Ковалевская Ксения
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:11:38.012092
+INFO:root:renew connection tor -> 2023-09-19 17:11:42.155872
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.71
+INFO:root:ip_actual -> 185.220.101.71
+INFO:root:get driver -> 2023-09-19 17:11:46.440894
+INFO:root:other_id1 -> 50425
+INFO:root:other_id1 -> 48686
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Волкова Екатерина
+
+Самарова Татьяна
+
+Василевич Мария
+Подтвердить date -> 2023-09-19 17:12:20.720710
+INFO:root:renew connection tor -> 2023-09-19 17:12:24.879675
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 193.35.18.98
+INFO:root:ip_actual -> 193.35.18.98
+INFO:root:get driver -> 2023-09-19 17:12:29.342634
+INFO:root:other_id1 -> 48614
+INFO:root:other_id1 -> 49246
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Горбунова Валентина
+
+Максимова Влада
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:13:12.810723
+INFO:root:renew connection tor -> 2023-09-19 17:13:16.962001
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 37.228.129.5
+INFO:root:ip_actual -> 37.228.129.5
+INFO:root:get driver -> 2023-09-19 17:13:21.678493
+INFO:root:other_id1 -> 49901
+INFO:root:other_id1 -> 49657
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Диенкова Екатерина
+
+Самарова Татьяна
+
+Парфенова Юлия
+Подтвердить date -> 2023-09-19 17:13:55.424452
+INFO:root:renew connection tor -> 2023-09-19 17:14:00.574378
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.102.242
+INFO:root:ip_actual -> 185.220.102.242
+INFO:root:get driver -> 2023-09-19 17:14:05.487619
+INFO:root:other_id1 -> 49247
+INFO:root:other_id1 -> 49034
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Хакимова Гульнур
+
+Кушевская Сабина
+Подтвердить date -> 2023-09-19 17:14:49.638923
+INFO:root:renew connection tor -> 2023-09-19 17:14:54.780100
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:root:ip_current -> 192.42.116.178
+INFO:root:ip_actual -> 192.42.116.178
+INFO:root:get driver -> 2023-09-19 17:14:59.368467
+INFO:root:other_id1 -> 49897
+INFO:root:other_id1 -> 48930
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Кологреева Евгения
+
+Самарова Татьяна
+
+Шилохвостова Анастасия
+Подтвердить date -> 2023-09-19 17:15:45.865998
+INFO:root:renew connection tor -> 2023-09-19 17:15:50.001735
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.235.146.29
+INFO:root:ip_actual -> 185.235.146.29
+INFO:root:get driver -> 2023-09-19 17:15:54.404091
+INFO:root:other_id1 -> 49029
+INFO:root:other_id1 -> 48687
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Зырянова Анна
+
+Бодрова Вера
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:16:34.430638
+INFO:root:renew connection tor -> 2023-09-19 17:16:39.573542
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 198.251.84.99
+INFO:root:ip_actual -> 198.251.84.99
+INFO:root:get driver -> 2023-09-19 17:16:43.997863
+INFO:root:other_id1 -> 50426
+INFO:root:other_id1 -> 49371
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Тукиш Дарья
+
+Самарова Татьяна
+
+Вишняк Ксения
+Подтвердить date -> 2023-09-19 17:17:20.669567
+INFO:root:renew connection tor -> 2023-09-19 17:17:25.800272
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.243.218.35
+INFO:root:ip_actual -> 185.243.218.35
+INFO:root:get driver -> 2023-09-19 17:17:31.462658
+INFO:root:other_id1 -> 48682
+INFO:root:other_id1 -> 48983
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Амельченко Кристина
+
+Самарова Татьяна
+
+Жумабекова Ажар
+Подтвердить date -> 2023-09-19 17:18:14.718829
+INFO:root:renew connection tor -> 2023-09-19 17:18:18.856829
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.204
+INFO:root:ip_actual -> 192.42.116.204
+INFO:root:get driver -> 2023-09-19 17:18:23.304311
+INFO:root:other_id1 -> 49773
+INFO:root:other_id1 -> 49435
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Галина Александра
+
+Ушакова Элина
+Подтвердить date -> 2023-09-19 17:19:08.810333
+INFO:root:renew connection tor -> 2023-09-19 17:19:11.960944
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 45.83.104.137
+INFO:root:ip_actual -> 45.83.104.137
+INFO:root:get driver -> 2023-09-19 17:19:16.385158
+INFO:root:other_id1 -> 50058
+INFO:root:other_id1 -> 50426
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Тукиш Дарья
+
+Бондаренко Эльвира
+Подтвердить date -> 2023-09-19 17:20:00.591465
+INFO:root:renew connection tor -> 2023-09-19 17:20:05.741048
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 171.25.193.20
+INFO:root:ip_actual -> 171.25.193.20
+INFO:root:get driver -> 2023-09-19 17:20:10.491986
+INFO:root:other_id1 -> 49441
+INFO:root:other_id1 -> 49655
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Барбашина Дарья
+
+Гречанина Анастасия
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:20:54.094306
+INFO:root:renew connection tor -> 2023-09-19 17:20:57.225031
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.194
+INFO:root:ip_actual -> 192.42.116.194
+INFO:root:get driver -> 2023-09-19 17:21:01.429550
+INFO:root:other_id1 -> 48924
+INFO:root:other_id1 -> 48943
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Колпакова Маргарита
+
+Самарова Татьяна
+
+Петрова Анастасия
+Подтвердить date -> 2023-09-19 17:21:43.641755
+INFO:root:renew connection tor -> 2023-09-19 17:21:47.789644
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 103.251.167.20
+INFO:root:ip_actual -> 103.251.167.20
+INFO:root:get driver -> 2023-09-19 17:21:52.333459
+INFO:root:other_id1 -> 49157
+INFO:root:other_id1 -> 50426
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Таболина Арина
+
+Самарова Татьяна
+
+Тукиш Дарья
+Подтвердить date -> 2023-09-19 17:22:40.392787
+INFO:root:renew connection tor -> 2023-09-19 17:22:44.543955
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.103.115
+INFO:root:ip_actual -> 185.220.103.115
+INFO:root:get driver -> 2023-09-19 17:22:49.565221
+INFO:root:other_id1 -> 49157
+INFO:root:other_id1 -> 48944
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Пихтерова Анастасия
+
+Таболина Арина
+Подтвердить date -> 2023-09-19 17:24:17.294046
+INFO:root:renew connection tor -> 2023-09-19 17:24:21.449065
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 89.234.157.254
+INFO:root:ip_actual -> 89.234.157.254
+INFO:root:get driver -> 2023-09-19 17:24:25.825813
+INFO:root:other_id1 -> 49372
+INFO:root:other_id1 -> 49484
+INFO:root:Exception
+INFO:root:kill tor -> 2023-09-19 17:25:09.808266
+INFO:root:tor run -> 2023-09-19 17:25:09.809284
+INFO:root:ip_actual -> 51.210.138.64
+INFO:root:get driver -> 2023-09-19 17:25:16.139569
+INFO:root:other_id1 -> 48939
+INFO:root:other_id1 -> 48765
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Украинец Ирина
+
+Пальмина Анна
+Подтвердить date -> 2023-09-19 17:25:56.094008
+INFO:root:renew connection tor -> 2023-09-19 17:25:57.230133
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:root:ip_current -> 45.134.225.36
+INFO:root:ip_actual -> 45.134.225.36
+INFO:root:get driver -> 2023-09-19 17:26:01.655644
+INFO:root:other_id1 -> 48819
+INFO:root:other_id1 -> 49436
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Мащенская Ольга
+
+Сорокина Эльвира
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:26:49.761016
+INFO:root:renew connection tor -> 2023-09-19 17:26:52.912196
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 80.67.167.81
+INFO:root:ip_actual -> 80.67.167.81
+INFO:root:get driver -> 2023-09-19 17:26:57.215160
+INFO:root:other_id1 -> 50449
+INFO:root:other_id1 -> 50430
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Громова Елизавета
+
+Самарова Татьяна
+
+Носова Карина
+Подтвердить date -> 2023-09-19 17:27:33.320608
+INFO:root:renew connection tor -> 2023-09-19 17:27:38.457401
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 23.129.64.148
+INFO:root:ip_actual -> 23.129.64.148
+INFO:root:get driver -> 2023-09-19 17:27:43.219264
+INFO:root:other_id1 -> 48983
+INFO:root:other_id1 -> 49726
+INFO:root:Exception
+INFO:root:kill tor -> 2023-09-19 17:28:17.975352
+INFO:root:tor run -> 2023-09-19 17:28:17.976367
+INFO:root:ip_actual -> 185.220.102.252
+INFO:root:get driver -> 2023-09-19 17:28:23.539881
+INFO:root:other_id1 -> 50447
+INFO:root:other_id1 -> 49657
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Парфенова Юлия
+
+Самарова Татьяна
+
+Алещенко Ксения
+Подтвердить date -> 2023-09-19 17:29:02.348688
+INFO:root:renew connection tor -> 2023-09-19 17:29:03.486261
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.180
+INFO:root:ip_actual -> 192.42.116.180
+INFO:root:get driver -> 2023-09-19 17:29:07.943273
+INFO:root:other_id1 -> 48543
+INFO:root:other_id1 -> 49245
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Ахметова Резеда
+
+Косый Татьяна
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:30:42.051380
+INFO:root:renew connection tor -> 2023-09-19 17:30:46.202071
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:root:ip_current -> 107.189.12.49
+INFO:root:ip_actual -> 107.189.12.49
+INFO:root:get driver -> 2023-09-19 17:30:54.043695
+INFO:root:other_id1 -> 49895
+INFO:root:other_id1 -> 49246
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Дривило Алина
+
+Максимова Влада
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:31:50.941937
+INFO:root:renew connection tor -> 2023-09-19 17:31:55.079887
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.102.243
+INFO:root:ip_actual -> 185.220.102.243
+INFO:root:get driver -> 2023-09-19 17:32:00.214449
+INFO:root:other_id1 -> 50439
+INFO:root:other_id1 -> 48616
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Трясцына Алена
+
+Игловская Анастасия
+Подтвердить date -> 2023-09-19 17:33:45.038573
+INFO:root:renew connection tor -> 2023-09-19 17:33:50.186088
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:Exception
+INFO:root:kill tor -> 2023-09-19 17:33:54.059369
+INFO:root:tor run -> 2023-09-19 17:33:54.061400
+INFO:root:ip_actual -> 23.128.248.27
+INFO:root:get driver -> 2023-09-19 17:34:00.493109
+INFO:root:other_id1 -> 48938
+INFO:root:other_id1 -> 49438
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Матвеева Евгения
+
+Самарова Татьяна
+
+Воротынцева Алина
+Подтвердить date -> 2023-09-19 17:35:27.991286
+INFO:root:renew connection tor -> 2023-09-19 17:35:31.133463
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "[WinError 10058] Запрос на отправку или получение данных был запрещен, т.к. сокет уже отключен в данном направлении на основании прежней запроса на его отключение"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:root:ip_current -> 192.42.116.193
+INFO:root:ip_actual -> 192.42.116.193
+INFO:root:get driver -> 2023-09-19 17:35:37.035356
+INFO:root:other_id1 -> 50453
+INFO:root:other_id1 -> 50426
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Ачкасова Алена
+
+Тукиш Дарья
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:37:18.980528
+INFO:root:renew connection tor -> 2023-09-19 17:37:24.125986
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 89.147.110.214
+INFO:root:ip_actual -> 89.147.110.214
+INFO:root:get driver -> 2023-09-19 17:37:28.749358
+INFO:root:other_id1 -> 50440
+INFO:root:other_id1 -> 50428
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Патанова Анастасия
+
+Капустина Мария
+Подтвердить date -> 2023-09-19 17:38:11.633642
+INFO:root:renew connection tor -> 2023-09-19 17:38:16.777534
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.102.247
+INFO:root:ip_actual -> 185.220.102.247
+INFO:root:get driver -> 2023-09-19 17:38:21.065057
+INFO:root:other_id1 -> 49373
+INFO:root:other_id1 -> 50437
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Волковинская Марина
+
+Трунова Кристина
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:38:56.279086
+INFO:root:renew connection tor -> 2023-09-19 17:38:59.420911
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.177
+INFO:root:ip_actual -> 192.42.116.177
+INFO:root:get driver -> 2023-09-19 17:39:04.009267
+INFO:root:other_id1 -> 48939
+INFO:root:other_id1 -> 49033
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Пальмина Анна
+
+Самарова Татьяна
+
+Золина Анна
+Подтвердить date -> 2023-09-19 17:39:39.966472
+INFO:root:renew connection tor -> 2023-09-19 17:39:43.102301
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 80.67.167.81
+INFO:root:ip_actual -> 80.67.167.81
+INFO:root:get driver -> 2023-09-19 17:39:47.341228
+INFO:root:other_id1 -> 49442
+INFO:root:other_id1 -> 50450
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Артемьева Нина
+
+Пантелеева Александра
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:40:27.754062
+INFO:root:renew connection tor -> 2023-09-19 17:40:32.892135
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 107.189.11.111
+INFO:root:ip_actual -> 107.189.11.111
+INFO:root:get driver -> 2023-09-19 17:40:37.188001
+INFO:root:other_id1 -> 50438
+INFO:root:other_id1 -> 50443
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Зуева Екатерина
+
+Самарова Татьяна
+
+Трифонова Елена
+Подтвердить date -> 2023-09-19 17:41:17.412344
+INFO:root:renew connection tor -> 2023-09-19 17:41:21.547864
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.129.61.8
+INFO:root:ip_actual -> 185.129.61.8
+INFO:root:get driver -> 2023-09-19 17:41:25.906643
+INFO:root:other_id1 -> 50149
+INFO:root:other_id1 -> 49435
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Глухова Ксения
+
+Самарова Татьяна
+
+Ушакова Элина
+Подтвердить date -> 2023-09-19 17:42:01.973189
+INFO:root:renew connection tor -> 2023-09-19 17:42:07.108238
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 45.83.104.137
+INFO:root:ip_actual -> 45.83.104.137
+INFO:root:get driver -> 2023-09-19 17:42:11.736045
+INFO:root:other_id1 -> 49659
+INFO:root:other_id1 -> 49438
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Филатова Екатерина
+
+Матвеева Евгения
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:43:06.636196
+INFO:root:renew connection tor -> 2023-09-19 17:43:10.777074
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.67
+INFO:root:ip_actual -> 185.220.101.67
+INFO:root:get driver -> 2023-09-19 17:43:15.074714
+INFO:root:other_id1 -> 49155
+INFO:root:other_id1 -> 49656
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Панова Екатерина
+
+Самарова Татьяна
+
+Мусорова Анна
+Подтвердить date -> 2023-09-19 17:43:49.375755
+INFO:root:renew connection tor -> 2023-09-19 17:43:54.515134
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0000)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 107.189.4.169
+INFO:root:ip_actual -> 107.189.4.169
+INFO:root:get driver -> 2023-09-19 17:43:59.429749
+INFO:root:other_id1 -> 48938
+INFO:root:other_id1 -> 49437
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Накруткина Марина
+
+Воротынцева Алина
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:44:47.039293
+INFO:root:renew connection tor -> 2023-09-19 17:44:52.183430
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 109.70.100.67
+INFO:root:ip_actual -> 109.70.100.67
+INFO:root:get driver -> 2023-09-19 17:44:56.602202
+INFO:root:other_id1 -> 48684
+INFO:root:other_id1 -> 48767
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Усбанова Любовь
+
+Тюплина Дарья
+Подтвердить date -> 2023-09-19 17:45:32.729818
+INFO:root:renew connection tor -> 2023-09-19 17:45:36.879483
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.220
+INFO:root:ip_actual -> 192.42.116.220
+INFO:root:get driver -> 2023-09-19 17:45:41.187123
+INFO:root:other_id1 -> 50454
+INFO:root:other_id1 -> 49562
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Брюханова Юлия
+
+Климушина Екатерина
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:46:44.389820
+INFO:root:renew connection tor -> 2023-09-19 17:46:47.534852
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.198
+INFO:root:ip_actual -> 192.42.116.198
+INFO:root:get driver -> 2023-09-19 17:46:51.678416
+INFO:root:other_id1 -> 48767
+INFO:root:other_id1 -> 48940
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Боброва Кристина
+
+Тюплина Дарья
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:47:35.900421
+INFO:root:renew connection tor -> 2023-09-19 17:47:39.038536
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 192.42.116.28
+INFO:root:ip_actual -> 192.42.116.28
+INFO:root:get driver -> 2023-09-19 17:47:44.237953
+INFO:root:other_id1 -> 49897
+INFO:root:other_id1 -> 50443
+INFO:root:Exception
+INFO:root:kill tor -> 2023-09-19 17:49:28.725598
+INFO:root:tor run -> 2023-09-19 17:49:28.727108
+INFO:root:ip_actual -> 109.70.100.2
+INFO:root:get driver -> 2023-09-19 17:49:35.331143
+INFO:root:other_id1 -> 48682
+INFO:root:other_id1 -> 48925
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Максимова Дарья
+
+Жумабекова Ажар
+Подтвердить date -> 2023-09-19 17:51:21.314862
+INFO:root:renew connection tor -> 2023-09-19 17:51:23.452579
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0010)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 178.218.144.51
+INFO:root:ip_actual -> 178.218.144.51
+INFO:root:get driver -> 2023-09-19 17:51:27.844095
+INFO:root:other_id1 -> 50433
+INFO:root:other_id1 -> 49561
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Зиятдинова Ксения
+
+Разова Ксения
+Подтвердить date -> 2023-09-19 17:52:05.756662
+INFO:root:renew connection tor -> 2023-09-19 17:52:10.898996
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 109.70.100.6
+INFO:root:ip_actual -> 109.70.100.6
+INFO:root:get driver -> 2023-09-19 17:52:15.263229
+INFO:root:other_id1 -> 49561
+INFO:root:other_id1 -> 48542
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Кондрахова Ксения
+
+Зиятдинова Ксения
+
+Самарова Татьяна
+Подтвердить date -> 2023-09-19 17:52:58.419762
+INFO:root:renew connection tor -> 2023-09-19 17:53:01.565193
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 89.58.41.251
+INFO:root:ip_actual -> 89.58.41.251
+INFO:root:get driver -> 2023-09-19 17:53:05.762546
+INFO:root:other_id1 -> 49144
+INFO:root:other_id1 -> 50431
+INFO:root:confirm -> Обратите внимание!
+Проголосовать нужно за трех участниц.
+Вы сделали выбор в пользу:
+Самарова Татьяна
+
+Шеметова Екатерина
+
+Точилова Елена
+Подтвердить date -> 2023-09-19 17:53:41.442645
+INFO:root:renew connection tor -> 2023-09-19 17:53:45.609063
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0005)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:root:ip_current -> 185.220.101.86
+INFO:root:ip_actual -> 185.220.101.86
+INFO:root:get driver -> 2023-09-19 17:53:49.966701

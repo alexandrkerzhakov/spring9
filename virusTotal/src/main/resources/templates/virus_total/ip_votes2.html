@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>IP Votes</title>
+    <meta name="description" content="IP-address votes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<form action="/virusTotal/saveIpVotes" method="post">
+    <input type="submit" value="Save IP Votes">
+</form>
+<div class="divBody" th:object="${ipVotesInstance}">
+    <div>
+        <h2>IP Comments:</h2>
+        <div th:each="data : ${ipVotesInstance.data}">
+            <div class="divTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Type</th>
+                        <th>Self Link</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td th:text="${data.id}"></td>
+                        <td th:text="${data.type}"></td>
+                        <td th:text="${data.links.self}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h3>Attributes:</h3>
+                <div class="divTable">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Verdict</th>
+                            <th>Date</th>
+                            <th>Value</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td th:text="${data.attributes.verdict}"></td>
+                            <td th:text="${data.attributes.date}"></td>
+                            <td th:text="${data.attributes.value}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3>Meta:</h3>
+            <div class="divTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td th:text="${ipVotesInstance.meta.count}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <h3>Links:</h3>
+            <div class="divTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Self Link</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td th:text="${ipVotesInstance.links.self}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

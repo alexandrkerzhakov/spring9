@@ -22,6 +22,10 @@ public class IpInfo {
         private String status;
         @JsonProperty("CountryCode")
         private String countryCode;
+        @JsonProperty("HitsCount")
+        private Long hitsCount;
+        @JsonProperty("FirstSeen")
+        private String firstSeen;
         @JsonProperty("Ip")
         private String ip;
         @JsonProperty("Categories")

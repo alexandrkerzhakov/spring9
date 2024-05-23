@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e36e9aa-35cf-4e5b-b838-6bff781b9cfc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/apigateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/src/main/java/ru/gb/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/java/ru/gb/apigateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kaspersky/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/java/ru/gb/kaspersky/controller/KasperskyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kaspersky/src/main/java/ru/gb/kaspersky/controller/KasperskyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/java/ru/gb/kaspersky/model/IpInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kaspersky/src/main/java/ru/gb/kaspersky/model/IpInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/java/ru/gb/kaspersky/service/KasperskyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kaspersky/src/main/java/ru/gb/kaspersky/service/KasperskyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kaspersky/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/resources/templates/kaspersky/analyses_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/resources/templates/kaspersky/domain_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/resources/templates/kaspersky/ip_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/resources/templates/kaspersky/response.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/resources/templates/kaspersky/upload_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/main/resources/templates/kaspersky/url_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaspersky/src/test/java/ru/gb/kaspersky/KasperskyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/kaspersky/src/test/java/ru/gb/kaspersky/KasperskyApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/virusTotal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/java/ru/gb/virusTotal/controller/VirusTotalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/virusTotal/src/main/java/ru/gb/virusTotal/controller/VirusTotalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/java/ru/gb/virusTotal/service/VirusTotalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/virusTotal/src/main/java/ru/gb/virusTotal/service/VirusTotalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/virusTotal/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/templates/virus_total/analyses_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/templates/virus_total/domain_comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/templates/virus_total/domain_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/templates/virus_total/domain_votes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/templates/virus_total/ip_comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/templates/virus_total/ip_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/templates/virus_total/ip_votes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/main/resources/templates/virus_total/upload_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virusTotal/src/test/java/ru/gb/virusTotal/VirusTotalApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/virusTotal/src/test/java/ru/gb/virusTotal/VirusTotalApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2gN6X4NAl9IqfTAdUCLW0pHs9OX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/Maven/diplom_work/virusTotal/src/main/java/ru/gb/virusTotal",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.21034482",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "617b8f32d4e912669819553e0b725d45"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Maven\diplom_work\virusTotal\src\main\java\ru\gb\virusTotal" />
+      <recent name="D:\Maven\diplom_work\kaspersky\src\main\java\ru\gb\kaspersky" />
+      <recent name="D:\Maven\diplom_work\kaspersky\src\main\resources\templates\kaspersky" />
+      <recent name="D:\Maven\diplom_work\virusTotal\src\main\resources" />
+      <recent name="D:\Maven\diplom_work\kaspersky\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Maven\diplom_work\virusTotal\src\main\resources\templates\virus_total\2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MavenRunConfiguration" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.VirusTotalApplicationTests">
+    <configuration name="VirusTotalApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="virusTotal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.virusTotal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.gb.virusTotal" />
+      <option name="MAIN_CLASS_NAME" value="ru.gb.virusTotal.VirusTotalApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="apigateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.gb.apigateway.ApiGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.gb.eurekaserver.EurekaServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KasperskyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="kaspersky" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.gb.kaspersky.KasperskyApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.kaspersky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VirusTotalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="virusTotal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.gb.virusTotal.VirusTotalApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.virusTotal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="diplom_work" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -ea" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.VirusTotalApplicationTests" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.KasperskyApplication" />
+      <item itemvalue="Spring Boot.VirusTotalApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.KasperskyApplication" />
+        <item itemvalue="Spring Boot.VirusTotalApplication" />
+        <item itemvalue="JUnit.VirusTotalApplicationTests" />
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e36e9aa-35cf-4e5b-b838-6bff781b9cfc" name="Changes" comment="" />
+      <created>1715525724764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715525724764</updated>
+      <workItem from="1715525726249" duration="36000" />
+      <workItem from="1715525784949" duration="5738000" />
+      <workItem from="1716288234659" duration="114000" />
+      <workItem from="1716288362198" duration="1082000" />
+      <workItem from="1716289466019" duration="183000" />
+      <workItem from="1716289673921" duration="161000" />
+      <workItem from="1716289884413" duration="1019000" />
+      <workItem from="1716290938514" duration="5780000" />
+      <workItem from="1716362909945" duration="76000" />
+      <workItem from="1716363007491" duration="15108000" />
+      <workItem from="1716447705557" duration="5416000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

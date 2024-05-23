@@ -5,77 +5,13 @@
     <title>Analyses File</title>
     <meta name="description" content="Downloaded file information">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h2, h3 {
-            color: #333;
-        }
-
-        form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        div {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: inline-block;
-            width: 150px;
-            font-weight: bold;
-            color: #444;
-        }
-
-        span {
-            margin-left: 10px;
-            color: #666;
-        }
-
-        .table_results {
-            min-width: 300px;
-            overflow: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<form th:object="${analysesFileInstance}">
+<div class="divBody" th:object="${analysesFileInstance}">
     <div>
-        <h1>Domain Info:</h1>
-
-        <div>
+        <h2>Domain Info:</h2>
+        <div class="divTable">
             <table>
                 <thead>
                 <tr>
@@ -96,7 +32,7 @@
 
         <div>
             <h2>Attributes:</h2>
-            <div class="table_results">
+            <div class="divTable">
                 <h3>Results:</h3>
                 <table>
                     <thead>
@@ -124,7 +60,7 @@
                 </table>
             </div>
 
-            <div>
+            <div class="divTable">
                 <table>
                     <thead>
                     <tr>
@@ -143,63 +79,63 @@
 
             <div>
                 <h3>Stats:</h3>
+                <div class="divTable">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Malicious</th>
+                            <th>Suspicious</th>
+                            <th>Undetected</th>
+                            <th>Harmless</th>
+                            <th>Timeout</th>
+                            <th>Confirmed Timeout</th>
+                            <th>Failure</th>
+                            <th>Type Unsupported</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td th:text="${analysesFileInstance.data.attributes.stats.malicious}"></td>
+                            <td th:text="${analysesFileInstance.data.attributes.stats.suspicious}"></td>
+                            <td th:text="${analysesFileInstance.data.attributes.stats.undetected}"></td>
+                            <td th:text="${analysesFileInstance.data.attributes.stats.harmless}"></td>
+                            <td th:text="${analysesFileInstance.data.attributes.stats.timeout}"></td>
+                            <!--                <td th:text="${ipInfoInstance.data.attributes.stats.confirmed-timeout}"></td>-->
+                            <td th:text="${analysesFileInstance.data.attributes.stats.failure}"></td>
+                            <!--                <td th:text="${ipInfoInstance.data.attributes.stats.type-unsupported}"></td>-->
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Meta(File Info):</h2>
+            <div class="divTable">
                 <table>
                     <thead>
                     <tr>
-                        <th>Malicious</th>
-                        <th>Suspicious</th>
-                        <th>Undetected</th>
-                        <th>Harmless</th>
-                        <th>Timeout</th>
-                        <th>Confirmed Timeout</th>
-                        <th>Failure</th>
-                        <th>Type Unsupported</th>
+                        <th>sha256</th>
+                        <th>md5</th>
+                        <th>sha1</th>
+                        <th>size</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td th:text="${analysesFileInstance.data.attributes.stats.malicious}"></td>
-                        <td th:text="${analysesFileInstance.data.attributes.stats.suspicious}"></td>
-                        <td th:text="${analysesFileInstance.data.attributes.stats.undetected}"></td>
-                        <td th:text="${analysesFileInstance.data.attributes.stats.harmless}"></td>
-                        <td th:text="${analysesFileInstance.data.attributes.stats.timeout}"></td>
-                        <!--                <td th:text="${ipInfoInstance.data.attributes.stats.confirmed-timeout}"></td>-->
-                        <td th:text="${analysesFileInstance.data.attributes.stats.failure}"></td>
-                        <!--                <td th:text="${ipInfoInstance.data.attributes.stats.type-unsupported}"></td>-->
+                        <td th:text="${analysesFileInstance.meta.file_info.sha256}"></td>
+                        <td th:text="${analysesFileInstance.meta.file_info.md5}"></td>
+                        <td th:text="${analysesFileInstance.meta.file_info.sha1}"></td>
+                        <td th:text="${analysesFileInstance.meta.file_info.size}"></td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-
-        <div>
-            <h2>Meta:</h2>
-            <h2>File Info:</h2>
-            <table>
-                <thead>
-                <tr>
-                    <th>sha256</th>
-                    <th>md5</th>
-                    <th>sha1</th>
-                    <th>size</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td th:text="${analysesFileInstance.meta.file_info.sha256}"></td>
-                    <td th:text="${analysesFileInstance.meta.file_info.md5}"></td>
-                    <td th:text="${analysesFileInstance.meta.file_info.sha1}"></td>
-                    <td th:text="${analysesFileInstance.meta.file_info.size}"></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-
-
     </div>
 
-
-</form>
+</div>
 </body>
 </html>
 

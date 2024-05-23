@@ -5,76 +5,12 @@
     <title>IP Info</title>
     <meta name="description" content="IP-address information">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h2, h3 {
-            color: #333;
-        }
-
-        form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        div {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: inline-block;
-            width: 150px;
-            font-weight: bold;
-            color: #444;
-        }
-
-        span {
-            margin-left: 10px;
-            color: #666;
-        }
-
-        .table_results {
-            min-width: 300px;
-            overflow: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<form th:object="${ipInfoInstance}">
+<div class="divBody" th:object="${ipInfoInstance}">
     <h2>IP Info:</h2>
-
-    <div>
+    <div class="divTable">
         <table>
             <thead>
             <tr>
@@ -90,75 +26,77 @@
     </div>
 
     <div>
-        <h2>IP General Info:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Status</th>
-                <th>Country Code</th>
-                <th>IP Address</th>
-                <th>Categories</th>
-                <th>Categories with Zone</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${ipInfoInstance.ipGeneralInfo.status}"></td>
-                <td th:text="${ipInfoInstance.ipGeneralInfo.countryCode}"></td>
-                <td th:text="${ipInfoInstance.ipGeneralInfo.ip}"></td>
-                <td th:text="${#strings.listJoin(ipInfoInstance.ipGeneralInfo.categories, ', ')}"></td>
-                <td th:text="${#strings.listJoin(ipInfoInstance.ipGeneralInfo.categoriesWithZone, ', ')}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <h3>IP General Info:</h3>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Country Code</th>
+                    <th>IP Address</th>
+                    <th>Categories</th>
+                    <th>Categories with Zone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${ipInfoInstance.ipGeneralInfo.status}"></td>
+                    <td th:text="${ipInfoInstance.ipGeneralInfo.countryCode}"></td>
+                    <td th:text="${ipInfoInstance.ipGeneralInfo.ip}"></td>
+                    <td th:text="${#strings.listJoin(ipInfoInstance.ipGeneralInfo.categories, ', ')}"></td>
+                    <td th:text="${#strings.listJoin(ipInfoInstance.ipGeneralInfo.categoriesWithZone, ', ')}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div>
-        <h2>Asn:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>ASN</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${#strings.listJoin(ipInfoInstance.ipWhoIs.asn, ', ')}"></td>
-
-            </tr>
-            </tbody>
-        </table>
+        <h3>Asn:</h3>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>ASN</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${#strings.listJoin(ipInfoInstance.ipWhoIs.asn, ', ')}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <div>
-        <h2>IP WhoIs:</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Net</th>
-                <th>Range Start</th>
-                <th>Range End</th>
-                <th>Created</th>
-                <th>Changed</th>
-                <th>Name</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td th:text="${ipInfoInstance.ipWhoIs.net}"></td>
-                <td th:text="${ipInfoInstance.ipWhoIs.net.rangeStart}"></td>
-                <td th:text="${ipInfoInstance.ipWhoIs.net.rangeEnd}"></td>
-                <td th:text="${ipInfoInstance.ipWhoIs.net.created}"></td>
-                <td th:text="${ipInfoInstance.ipWhoIs.net.changed}"></td>
-                <td th:text="${ipInfoInstance.ipWhoIs.net.name}"></td>
-                <td th:text="${ipInfoInstance.ipWhoIs.net.description}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <h3>IP WhoIs:</h3>
+        <div class="divTable">
+            <table>
+                <thead>
+                <tr>
+                    <th>Net</th>
+                    <th>Range Start</th>
+                    <th>Range End</th>
+                    <th>Created</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td th:text="${ipInfoInstance.ipWhoIs.net}"></td>
+                    <td th:text="${ipInfoInstance.ipWhoIs.net.rangeStart}"></td>
+                    <td th:text="${ipInfoInstance.ipWhoIs.net.rangeEnd}"></td>
+                    <td th:text="${ipInfoInstance.ipWhoIs.net.created}"></td>
+                    <td th:text="${ipInfoInstance.ipWhoIs.net.name}"></td>
+                    <td th:text="${ipInfoInstance.ipWhoIs.net.description}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
-</form>
+</div>
 </body>
 </html>
 

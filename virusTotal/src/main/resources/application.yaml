@@ -14,3 +14,9 @@ spring:
 virustotal:
   BASE_URL: https://www.virustotal.com/api/v3/
   API_KEY: 05c9a3dde9d7257a4968674470599f6639f35dfb14477c924da548ea4f85e2a9
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics, prometheus, health
