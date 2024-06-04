@@ -90,7 +90,7 @@ public class VirusTotalService {
         return postRequest(Url, multipartBody);
     }
 
-    public Request createDopPostRequest(String dopUrl, MultipartFile file) throws IOException {
+    public Request createOtherPostRequest(String dopUrl, MultipartFile file) throws IOException {
         logger.info("createDopPostRequest on {}", dopUrl);
         MultipartBody multipartBody = createMultipartBodyForPostRequest(file);
         return postRequest(dopUrl, multipartBody);
@@ -113,6 +113,4 @@ public class VirusTotalService {
                         okhttp3.RequestBody.create(multipartFile.getBytes(), MediaType.parse("application/octet-stream")))
                 .build();
     }
-
-
 }

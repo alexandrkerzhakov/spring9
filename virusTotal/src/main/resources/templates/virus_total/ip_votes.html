@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<form action="/virusTotalEntity/saveIpVotes" method="post">
+    <input type="submit" value="Save IP Votes">
+    <input type="hidden" name="json" th:value="${json}">
+</form>
 <div class="divBody" th:object="${ipVotesInstance}">
     <div>
-        <h2>IP Comments:</h2>
+        <h2>IP Votes:</h2>
         <div th:each="data : ${ipVotesInstance.data}">
             <div class="divTable">
                 <table>

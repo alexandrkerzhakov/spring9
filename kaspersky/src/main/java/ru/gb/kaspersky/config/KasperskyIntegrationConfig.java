@@ -12,7 +12,7 @@ import java.io.File;
 import java.nio.file.Paths;
 
 @Configuration
-public class IntegrationConfig {
+public class KasperskyIntegrationConfig {
     private final File ipInfoFile = new File(Paths.get("").toAbsolutePath() + "\\kaspersky\\ipLog");
 
     @Bean

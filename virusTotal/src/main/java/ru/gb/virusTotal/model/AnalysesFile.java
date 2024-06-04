@@ -10,6 +10,7 @@ import java.util.Map;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AnalysesFile {
     private Data data;
+
     private Meta meta;
 
 
@@ -50,9 +51,12 @@ public class AnalysesFile {
             private int undetected;
             private int harmless;
             private int timeout;
+
             @JsonProperty("confirmed-timeout")
             private int confirmed_timeout;
+
             private int failure;
+
             @JsonProperty("type-unsupported")
             private int type_unsupported;
         }

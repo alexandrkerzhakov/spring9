@@ -137,8 +137,10 @@ public class DomainInfo {
             private List<String> key_usage;
             private CaInformationAccess ca_information_access;
             private List<String> certificate_policies;
+
             @JsonProperty("CA")
             private boolean ca;
+
             private List<String> crl_distribution_points;
             private List<String> subject_alternative_name;
             private List<String> extended_key_usage;
@@ -151,6 +153,7 @@ public class DomainInfo {
         public static class CaInformationAccess {
             @JsonProperty("CA Issuers")
             private String ca_issuers;
+
             @JsonProperty("OCSP")
             private String ocsp;
         }
@@ -193,8 +196,10 @@ public class DomainInfo {
         public static class Issuer {
             @JsonProperty("C")
             private String c;
+
             @JsonProperty("O")
             private String o;
+
             @JsonProperty("CN")
             private String cn;
         }

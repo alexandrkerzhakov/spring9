@@ -12,17 +12,32 @@ spring:
           predicates:
             - Path=/virusTotal/**
 
-        - id: kaspersky
-          uri: http://localhost:8082/
+        - id: virusTotalEntity
+          uri: http://localhost:8081/
           predicates:
-            - Path=/kaspersky/**
+            - Path=/virusTotalEntity/**
 
         - id: cssVirusTotal
           uri: http://localhost:8081/
           predicates:
             - Path=/css/**
 
+        - id: VirusTotalSwagger
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/swagger-ui/**
+
+        - id: kaspersky
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/kaspersky/**
+
         - id: cssKaspersky
           uri: http://localhost:8082/
           predicates:
             - Path=/css/**
+
+        - id: kasperskySwagger
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/swagger-ui/**

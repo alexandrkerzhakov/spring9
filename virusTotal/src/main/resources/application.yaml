@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: virusTotal
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ipvotesentity
+    username: postgres
+    password: postgres
+
 
   servlet:
     multipart:
@@ -20,3 +28,5 @@ management:
     web:
       exposure:
         include: metrics, prometheus, health
+
+

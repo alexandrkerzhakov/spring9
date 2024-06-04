@@ -11,8 +11,10 @@ import java.util.List;
 public class IpInfo {
     @JsonProperty("Zone")
     private String zone;
+
     @JsonProperty("IpGeneralInfo")
     private IpGeneralInfo ipGeneralInfo;
+
     @JsonProperty("IpWhoIs")
     private IpWhoIs ipWhoIs;
 
@@ -20,16 +22,22 @@ public class IpInfo {
     public static class IpGeneralInfo {
         @JsonProperty("Status")
         private String status;
+
         @JsonProperty("CountryCode")
         private String countryCode;
+
         @JsonProperty("HitsCount")
         private Long hitsCount;
+
         @JsonProperty("FirstSeen")
         private String firstSeen;
+
         @JsonProperty("Ip")
         private String ip;
+
         @JsonProperty("Categories")
         private List<String> categories;
+
         @JsonProperty("CategoriesWithZone")
         private List<CategoryWithZone> categoriesWithZone;
     }
@@ -37,6 +45,7 @@ public class IpInfo {
     public static class CategoryWithZone {
         @JsonProperty("Name")
         private String name;
+
         @JsonProperty("Zone")
         private String zone;
     }
@@ -44,6 +53,7 @@ public class IpInfo {
     public static class IpWhoIs {
         @JsonProperty("Asn")
         private List<Asn> asn;
+
         @JsonProperty("Net")
         private Net net;
     }
@@ -51,6 +61,7 @@ public class IpInfo {
     public static class Asn {
         @JsonProperty("Number")
         private int number;
+
         @JsonProperty("Description")
         private List<String> description;
     }

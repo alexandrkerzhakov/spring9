@@ -107,8 +107,10 @@ public class IpInfo {
             private List<String> key_usage;
             private CaInformationAccess ca_information_access;
             private List<String> certificate_policies;
+
             @JsonProperty("CA")
             private boolean ca;
+
             private List<String> crl_distribution_points;
             private List<String> subject_alternative_name;
             private List<String> extended_key_usage;

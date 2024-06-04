@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>IpVotesEntity List</title>
+    <meta name="description" content="IpVotesEntity List">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div th:switch="${ipVotesEntityList}">
+    <h2 th:if="${#lists.isEmpty(ipVotesEntityList)}" th:text="'No IpVotes found'"/>
+    <div class="divBody" th:case="*">
+        <div>
+            <h2>IpVotes List:</h2>
+            <tr th:each="ipVotesEntity : ${ipVotesEntityList}">
+            <div class="divTable">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>IpVotesEntity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td th:text="${ipVotesEntity}"></td>
+                        <td><a th:href="@{deleteIpVotes/{id}(id=${ipVotesEntity.id})}">Delete</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
